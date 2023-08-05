@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+#infinity {
+  position: relative;
+  width: 212px;
+  height: 100px;
+  box-sizing: content-box;
+}
+#infinity:before,
+#infinity:after {
+  content: "";
+  box-sizing: content-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  border: 20px solid red;
+  border-radius: 50px 50px 0 50px;
+  transform: rotate(-45deg);
+}
+#infinity:after {
+  left: auto;
+  right: 0;
+  border-radius: 50px 50px 50px 0;
+  transform: rotate(45deg);
+}
