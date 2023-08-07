@@ -2,7 +2,6 @@ import React from 'react'
 import PageHeader from '../../components/shared/pageComponents/PageHeader'
 import UsageChartGraph from '../../components/shared/charts/UsageChartGraph'
 import ProfitChartGraph from '../../components/shared/charts/ProfitChartGraph'
-import CostBasedGraph from '../../components/shared/charts/CostBasedGraph'
 import CostGraph from '../../components/shared/charts/CostBasedGraph'
 import AgencyAdminTable from '../../components/shared/pageComponents/AgencyAdminTable'
 
