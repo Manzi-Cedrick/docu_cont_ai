@@ -5,7 +5,76 @@ interface sideBarLinks {
     path: string;
     icon: any;
 }
-export const sideBarLinks: sideBarLinks[] = [
+export const userSideBarLinks : sideBarLinks[] = [
+    {
+        name: "Profile",
+        path: "/user/profile",
+        icon: <AccountsIcon />
+    },
+    {
+        name: "Cloud",
+        path: "/user/cloud",
+        icon: <SettingsIcon />
+    },
+    {
+        name: "Upload Doc",
+        path: "/user/upload_doc",
+        icon: <TasksIcon />
+    },
+    {
+        name: "Support",
+        path: "/admin/support",
+        icon: <SupportIcon />
+    },
+    {
+        name: "Settings",
+        path: "/user/settings",
+        icon: <SettingsIcon />
+    }
+]
+export const agencySideBarLinks: sideBarLinks[] = [
+    {
+        name: "Profile",
+        path: "/agency/profile",
+        icon: <AccountsIcon />,
+    },
+    {
+        name: "Report",
+        path: "/agency/report",
+        icon: <TasksIcon />,
+    },
+    {
+        name: "Billing",
+        path: "/agency/billing",
+        icon: <BillingIcon />
+    },
+    {
+        name: "Accounts",
+        path: "/agency/accounts",
+        icon: <AccountsIcon />
+    },
+    {
+        name: "Tasks",
+        path: "/agency/tasks",
+        icon: <TasksIcon />
+    },
+    {
+        name: "Support",
+        path: "/agency/support",
+        icon: <SupportIcon />
+    },
+    {
+        name: "Settings",
+        path: "/agency/settings",
+        icon: <SettingsIcon />
+    },
+    {
+        name: "Cloud",
+        path: "/agency/cloud",
+        icon: <SettingsIcon />
+    }
+]
+export const adminSideBarLinks: sideBarLinks[] = [
     {
         name: "Agency Clients",
         path: "/admin/dashboard",
