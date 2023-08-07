@@ -17,7 +17,7 @@ const TaskPage = () => {
                     <EventCalendar showAddEvent={showAddEvent}
                         setShowAddEvent={setShowAddEvent}/>
                 </div>
-                <div className='w-full'>
+                <div className={`${showAddEvent ? 'block' : ' hidden'} w-full`}>
                     <AddEventCalendar/>
                 </div>
             </div>
