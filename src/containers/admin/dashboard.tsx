@@ -1,6 +1,6 @@
 import React from 'react'
 import { optionCards } from '../../utils/contants'
-import AgencyAdminTable from '../../components/shared/pageComponents/AgencyAdminTable'
+import AgencyAdminTable from '../../components/pageComponents/AgencyAdminTable'
 
 const Dashboard = () => {
     return (
