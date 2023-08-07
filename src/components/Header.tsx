@@ -1,6 +1,6 @@
 import React from 'react'
-import DropdownNotification from '../ui/DropdownNotifications'
-import DropdownProfile from '../ui/DropdownProfile'
+import DropdownNotification from './ui/DropdownNotifications'
+import DropdownProfile from './ui/DropdownProfile'
 
 const Header = () => {
     return (
