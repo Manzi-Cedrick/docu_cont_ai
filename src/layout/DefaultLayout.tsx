@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Outlet } from 'react-router-dom';
-import Sidebar from '../components/shared/sidebar';
+import Sidebar from '../components/shared/Sidebar';
 import Header from '../components/shared/Header';
 
 const DefaultLayout = () => {
