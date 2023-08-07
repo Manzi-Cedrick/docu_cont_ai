@@ -1,9 +1,11 @@
 import React from 'react'
-import PageHeader from '../../components/shared/pageComponents/PageHeader'
-import UsageChartGraph from '../../components/shared/charts/UsageChartGraph'
-import ProfitChartGraph from '../../components/shared/charts/ProfitChartGraph'
-import CostGraph from '../../components/shared/charts/CostBasedGraph'
-import AgencyAdminTable from '../../components/shared/pageComponents/AgencyAdminTable'
+
+import UsageChartGraph from '../../components/charts/UsageChartGraph'
+import ProfitChartGraph from '../../components/charts/ProfitChartGraph'
+import CostGraph from '../../components/charts/CostBasedGraph'
+import PageHeader from '../../components/pageComponents/PageHeader'
+import AgencyAdminTable from '../../components/pageComponents/AgencyAdminTable'
+
 
 const billingAgency = () => {
     return (

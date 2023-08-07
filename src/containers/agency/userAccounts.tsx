@@ -1,6 +1,6 @@
 import React from 'react'
-import PageHeader from '../../components/shared/pageComponents/PageHeader'
-import UserAccountsTable from '../../components/shared/pageComponents/UserAccountsTable'
+import PageHeader from '../../components/pageComponents/PageHeader'
+import UserAccountsTable from '../../components/pageComponents/UserAccountsTable'
 
 const UserAccounts = () => {
   return (

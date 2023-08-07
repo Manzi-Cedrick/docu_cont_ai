@@ -1,6 +1,6 @@
 import React from 'react'
-import PageHeader from '../../components/shared/pageComponents/PageHeader'
-import ReportTable from '../../components/shared/pageComponents/ReportTable'
+import PageHeader from '../../components/pageComponents/PageHeader'
+import ReportTable from '../../components/pageComponents/ReportTable'
 
 const ReportPage = () => {
     return (

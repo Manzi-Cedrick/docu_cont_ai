@@ -1,7 +1,6 @@
 import React from 'react'
-import AgencyAdminTable from '../../components/shared/pageComponents/AgencyAdminTable'
-import UserAdminTable from '../../components/shared/pageComponents/UserAdminTable'
-import PageHeader from '../../components/shared/pageComponents/PageHeader'
+import PageHeader from '../../components/pageComponents/PageHeader'
+import UserAdminTable from '../../components/pageComponents/UserAdminTable'
 
 const UserAgency = () => {
     return (

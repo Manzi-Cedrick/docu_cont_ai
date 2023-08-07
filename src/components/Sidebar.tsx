@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import {Link} from 'react-router-dom'
-import {adminSideBarLinks, agencySideBarLinks, userSideBarLinks} from '../../utils/contants'
+import {adminSideBarLinks, agencySideBarLinks, userSideBarLinks} from '../utils/contants'
 
 const Sidebar = () => {
     const checkHeaderActive = (path: string) => {

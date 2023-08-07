@@ -1,7 +1,7 @@
 import React from 'react'
-import PageHeader from '../../components/shared/pageComponents/PageHeader'
-import SectionAccountProfile from '../../components/shared/pageComponents/SettingsAccountProfile'
-import SectionAccountSSettings from '../../components/shared/pageComponents/SettingsAccountSection'
+import PageHeader from '../../components/pageComponents/PageHeader'
+import SectionAccountProfile from '../../components/pageComponents/SettingsAccountProfile'
+import SectionAccountSSettings from '../../components/pageComponents/SettingsAccountSection'
 
 const ProfilePage = () => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react'
-import PageHeader from '../../components/shared/pageComponents/PageHeader'
-import AddEventCalendar from '../../components/shared/pageComponents/AddEventCalendar'
-import EventCalendar from '../../components/shared/pageComponents/EventCalendar'
+import PageHeader from '../../components/pageComponents/PageHeader'
+import EventCalendar from '../../components/pageComponents/EventCalendar'
+import AddEventCalendar from '../../components/pageComponents/AddEventCalendar'
 
 const TaskPage = () => {
     const [showAddEvent, setShowAddEvent] = React.useState(false)
