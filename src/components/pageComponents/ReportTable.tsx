@@ -1,8 +1,6 @@
 import ReportTableHeader from "../TableData/ReportTableHeader";
 import ReportTableDataCell from "../TableData/ReprortTableDataCell";
 import TablePagination from "../TableData/TablePagination";
-import UserAdminDataCell from "../TableData/UserAdminDataCell";
-import UserAdminHeader from "../TableData/UserAdminHeader";
 
 const ReportTable = () => {
     return (
