@@ -1,5 +1,5 @@
 import React from 'react'
-import {UpdateSectionsIcon} from '../../icons'
+import { UpdateSectionsIcon } from '../icons'
 
 const UpdatesSection = () => {
     return (
