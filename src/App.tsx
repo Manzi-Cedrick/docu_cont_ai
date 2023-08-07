@@ -3,7 +3,6 @@ import { Route, Routes } from 'react-router-dom';
 import Dashboard from './containers/admin/dashboard';
 import Signup from './containers/auth/signup';
 import Login from './containers/auth/login';
-import Loader from './components/shared/Loader';
 import BillingPage from './containers/admin/billingPage';
 import UserAgency from './containers/admin/UserAgency';
 import AccountsPage from './containers/admin/accountsPage';
@@ -13,6 +12,7 @@ import ReportPage from './containers/agency/ReportPage';
 import billingAgency from './containers/agency/billingAgency';
 import UserAccounts from './containers/agency/userAccounts';
 import CloudPage from './containers/agency/cloudPage';
+import Loader from './components/shared/Loader';
 
 const DefaultLayout = lazy(() => import('./layout/DefaultLayout'));
 function App() {
