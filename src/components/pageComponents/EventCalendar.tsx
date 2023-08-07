@@ -1,8 +1,8 @@
 import React from 'react'
-import CalendarRangeHeader from '../../ui/event-calendar/CalendarRangeHeader'
-import CalendarPeriodRange from '../../ui/event-calendar/CalendarPeriodRange'
-import CalendarOpenRange from '../../ui/event-calendar/CalendarOpenRange'
-import CalendarEventZone from '../../ui/event-calendar/CalendarEventZone'
+import CalendarRangeHeader from '../ui/event-calendar/CalendarRangeHeader'
+import CalendarPeriodRange from '../ui/event-calendar/CalendarPeriodRange'
+import CalendarOpenRange from '../ui/event-calendar/CalendarOpenRange'
+import CalendarEventZone from '../ui/event-calendar/CalendarEventZone'
 
 const EventCalendar = ({showAddEvent, setShowAddEvent} : {
     showAddEvent: boolean,
