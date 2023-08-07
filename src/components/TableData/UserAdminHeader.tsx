@@ -1,5 +1,5 @@
 import React from 'react'
-import { SortableFilterIcon } from '../../../icons'
+import { SortableFilterIcon } from '../../icons'
 
 const UserAdminHeader = () => {
     return (
