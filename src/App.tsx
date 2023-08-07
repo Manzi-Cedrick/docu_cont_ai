@@ -8,6 +8,11 @@ import BillingPage from './containers/admin/billingPage';
 import UserAgency from './containers/admin/UserAgency';
 import AccountsPage from './containers/admin/accountsPage';
 import TaskPage from './containers/admin/taskPage';
+import ProfilePage from './containers/agency/profilePage';
+import ReportPage from './containers/agency/ReportPage';
+import billingAgency from './containers/agency/billingAgency';
+import UserAccounts from './containers/agency/userAccounts';
+import CloudPage from './containers/agency/cloudPage';
 
 const DefaultLayout = lazy(() => import('./layout/DefaultLayout'));
 function App() {
@@ -38,6 +43,51 @@ function App() {
       path: '/admin/tasks',
       component: TaskPage,
     },
+    {
+      path: '/admin/support',
+      component: Dashboard,
+    },
+    {
+      path: '/admin/settings',
+      component: Dashboard,
+    },
+    {
+      path: '/admin/cloud',
+      component: Dashboard,
+    },
+    {
+      path: '/agency/profile',
+      component: ProfilePage,
+    },
+    {
+      path: '/agency/report',
+      component: ReportPage,
+    },
+    {
+      path: '/agency/billing',
+      component: billingAgency,
+    },
+    {
+      path: '/agency/accounts',
+      component: UserAccounts,
+    },
+    {
+      path: '/agency/tasks',
+      component: TaskPage,
+    },
+    {
+      path: '/agency/support',
+      component: Dashboard,
+    },
+    {
+      path: '/agency/settings',
+      component: Dashboard,
+    },
+    {
+      path: '/agency/cloud',
+      component: CloudPage,
+    },
+    
   ];
 
   return loading ? (
