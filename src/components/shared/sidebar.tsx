@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {Link} from 'react-router-dom'
-import {sideBarLinks} from '../../utils/contants'
+import {adminSideBarLinks, agencySideBarLinks, userSideBarLinks} from '../../utils/contants'
 
 const Sidebar = () => {
     const checkHeaderActive = (path: string) => {
@@ -10,6 +10,17 @@ const Sidebar = () => {
             return ''
         }
     }
+    const verifyUserRole = () => {
+        const role = localStorage.getItem('role') || 'agency' ;
+        if (role === 'admin') {
+            return adminSideBarLinks
+        }
+        if (role === 'agency') {
+            return agencySideBarLinks
+        }
+        return userSideBarLinks
+    }
+    
     return (
         <aside className="flex flex-col w-64 h-screen px-4 py-8 overflow-y-auto bg-white border-r rtl:border-r-0 rtl:border-l">
             <Link to="#">
@@ -18,7 +29,7 @@ const Sidebar = () => {
             <div className="flex flex-col justify-between flex-1 mt-6">
                 <nav>
                     <div className='flex flex-col gap-4'>
-                    {sideBarLinks.slice(0,5).map((link) => (
+                    {verifyUserRole().slice(0,5).map((link) => (
                         <Link className={`${checkHeaderActive(link.path)} flex items-center  px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md`} to={link.path}>
                             {link.icon}
                             <span className="mx-4 font-medium">{link.name}</span>
@@ -27,7 +38,7 @@ const Sidebar = () => {
                     </div>
                     <hr className="my-6 border-gray-200 "/>
                     <div className='flex flex-col gap-4'>
-                    {sideBarLinks.slice(5).map((link) => (
+                    {verifyUserRole().slice(5).map((link) => (
                         <Link className={`${checkHeaderActive(link.path)} flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md`} to={link.path}>
                             {link.icon}
                             <span className="mx-4 font-medium">{link.name}</span>
