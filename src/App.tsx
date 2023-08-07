@@ -12,7 +12,8 @@ import ReportPage from './containers/agency/ReportPage';
 import billingAgency from './containers/agency/billingAgency';
 import UserAccounts from './containers/agency/userAccounts';
 import CloudPage from './containers/agency/cloudPage';
-import Loader from './components/shared/Loader';
+import LoaderSection from './components/ui/LoaderSection';
+
 
 const DefaultLayout = lazy(() => import('./layout/DefaultLayout'));
 function App() {
@@ -91,7 +92,7 @@ function App() {
   ];
 
   return loading ? (
-    <Loader />
+    <LoaderSection />
   ) : (
    <Routes>
       <Route path="/auth/signup" element={<Signup />} />
@@ -101,7 +102,7 @@ function App() {
             <Route
               path={path}
               element={
-                <Suspense fallback={<Loader />}>
+                <Suspense fallback={<LoaderSection />}>
                   <Component />
                 </Suspense>
               }
