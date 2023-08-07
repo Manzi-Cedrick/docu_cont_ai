@@ -11,7 +11,7 @@ const Sidebar = () => {
         }
     }
     const verifyUserRole = () => {
-        const role = localStorage.getItem('role') || 'agency' ;
+        const role = localStorage.getItem('role') || 'admin' ;
         if (role === 'admin') {
             return adminSideBarLinks
         }

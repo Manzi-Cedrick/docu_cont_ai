@@ -1,6 +1,6 @@
 import React from 'react'
 import QuoteSlider from '../../components/ui/QuoteSlider'
-import { Link } from 'react-router-dom'
+import { Link, redirect } from 'react-router-dom'
 
 const Login = () => {
     return (
@@ -27,7 +27,7 @@ const Login = () => {
                     </form>
                     <div className='items-center flex flex-col'>
                         <div className='py-4'>
-                            <button className='w-full py-3 text-black border-2 border-bdr hover:bg-[#e4e4e43e] rounded-xl font-semibold uppercase text-sm'>Login with Google</button>
+                            <button onClick={()=>redirect('/admin/dashboard')} className='w-full py-3 text-black border-2 border-bdr hover:bg-[#e4e4e43e] rounded-xl font-semibold uppercase text-sm'>Login with Google</button>
                             <span className='font-light text-sm text-center'>Start your free trial with credit card</span>
                         </div>
                         <span className='text-center text-sm absolute bottom-4'>Do not have an account ?
